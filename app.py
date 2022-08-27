@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
 
-model = pickle.load(open('C:/Users/HP/ML/Book_Recommendation_System/model.pkl', "rb"))
+model = pickle.load(open('model.pkl', "rb"))
 Final_data = pickle.load(open('Final_data.pkl','rb'))
 Pivot_data = pickle.load(open('Pivot_data.pkl','rb'))
 app = Flask(__name__)
